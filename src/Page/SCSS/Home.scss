@@ -1,0 +1,58 @@
+
+.container-fluid{
+    .container{
+        img{
+            border-radius: 10000px;
+            width: 200px;
+        }
+        // h6{
+
+        // }
+    }
+    .row{
+        .weekDiv{
+            border: 1px solid rgb(233, 233, 233);
+            width: 1.5rem;
+            height: fit-content;
+            padding: 0;
+            .dayDiv{
+                margin-top: .2rem;
+                padding-top: .25rem;
+                text-align: center;
+                border: 1px solid rgb(255, 255, 255);
+                width: 80%;
+                margin-left: 10%;
+                height: 1.5rem;
+                font-size: .6rem;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    // .container-fluid{
+
+    // }
+    form{
+        .col-11{
+            width: 80%;
+        }
+        .col-1{
+            width: 19%;
+        }
+    }
+}
+
+@media (max-width:394px) {
+    // .container-fluid{
+
+    // }
+    form{
+        .col-11{
+            width: 70%;
+        }
+        .col-1{
+            width: 28%;
+        }
+    }
+}
