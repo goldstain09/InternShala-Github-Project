@@ -8,10 +8,6 @@ export default function Home() {
   const [contributionData, setContributionData] = useState({});
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    gettingData(userName);
-  }, []);
-
   const gettingData = useCallback(
     async (username) => {
       try {
@@ -50,7 +46,7 @@ export default function Home() {
           },
           {
             headers: {
-              Authorization: `Bearer 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`,
+              Authorization: `Bearer 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`,
             },
           }
         );
@@ -65,7 +61,9 @@ export default function Home() {
     },
     [setContributionData]
   );
-
+  useEffect(() => {
+    gettingData(userName);
+  }, [gettingData]);
   //   console.log(contributionData);
   return (
     <>
